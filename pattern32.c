@@ -1,0 +1,34 @@
+#include<stdio.h>
+main()
+{
+	int i,j,k,l=9,n=1;
+	
+	for(i=1;i<=5;i++)
+	{
+		for(j=1;j<=4;j++)
+		{
+			if(j==1)
+				{
+					printf("%3d",i);
+				}
+			if(j==2)
+				{
+					k=i+l;
+					printf("%3d",k);
+				}
+			if(j==3)
+				{
+					k=k+n;
+					printf("%3d",k);
+				}
+			if(j==4)
+				{
+					k=k+l;
+					printf("%3d",k);
+				}
+		}
+		printf("\n");
+		l-=2;
+		n+=2;
+	}
+}
